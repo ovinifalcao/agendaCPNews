@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import { ClipLoader } from 'react-spinners';
 import './App.css';
+import EventBox from './components/eventBox';
+import {useEffect, useState} from "react";
+import { Events } from './types/events';
 
 function App() {
+
+  const[eventsList, setEventsList] = useState<Events[]>([]);
+
+  useEffect(() =>{
+    fetch('./events.json',{
+      headers: {
+        Accept: "application/json"
+      }
+    }).then(res => res.json())
+    .then(res =>  res.data  as Events[])
+    .then(res => setEventsList(res))
+  }, [])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='EventsDiv'>
+          {
+            !eventsList ? <ClipLoader color={"#43715D"} size={150} speedMultiplier={1}/> :
+            eventsList?.map((eventUnit, i) => {
+              return <EventBox key={i} {...eventUnit}/>
+            })
+          }
+        </div>
     </div>
   );
 }

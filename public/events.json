@@ -1,0 +1,48 @@
+{
+    "data":
+    [
+        {
+        "Titulo": "Sala de Oração",
+        "Mes": "Ago",
+        "Horario": "Das 20:30 às 21:30",
+        "Descricao": "Toda Segunda e Quarta na Sala do Zoom.",
+        "Link": "https:\/\/us02web.zoom.us\/j\/84321371627?pwd=UnpUSnp4Q2VhSUhQYVEraUFEYzIrUT09\"> Sala do Zoom <\/a>",
+        "Responsavel": "Sueli Cruz"
+        },
+        {
+        "Titulo": "Intimidade Kids",
+        "Dia": 12,
+        "Mes": "Ago",
+        "Horario": "Das 9:00 às 17:00",
+        "Descricao": "Faça sua inscrição aqui no link.",
+        "Inscricao": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLScKSMJWvcqZkg1xpibaOqfadl_w34GzPk9qifp1S62iH_8lrg\/viewform",
+        "Local": "ICF Capão",
+        "Responsavel": "Milena Santos"
+        },
+        {
+        "Titulo": "Encontro de Homens",
+        "Dia": 19,
+        "Mes": "Ago",
+        "Horario": "A partir das 20hrs",
+        "Local": "ICF Capão",
+        "Responsavel": "Pr. Fernando"
+        },
+        {
+        "Titulo": "Reunião de Pais",
+        "Dia": 19,
+        "Mes": "Ago",
+        "Horario": "A partir das 15hrs",
+        "Descricao": "Reunião do ministério infatil com os pais",
+        "Local": "ICF Capão",
+        "Responsavel": "Milena Santos"
+        },
+        {
+        "Titulo": "Busca pelo Espírito Santo",
+        "Dia": 25,
+        "Mes": "Ago",
+        "Horario": "Apartir das 20:30",
+        "Local": "ICF Capão",
+        "Responsavel": "Pr. Doni"
+        }
+    ]
+}
